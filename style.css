@@ -58,3 +58,22 @@ body{
 	font-size: 30px;
 	cursor: pointer;
 }
+
+.cntrlLeft, .cntrlRight {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background-color: rgba(0,0,0,.5);
+	position: absolute;
+	z-index: 5;
+}
+
+.cntrlLeft {
+	left: 25px;
+	bottom: 5px;
+}
+
+.cntrlRight {
+	right: 25px;
+	bottom: 5px;
+}
