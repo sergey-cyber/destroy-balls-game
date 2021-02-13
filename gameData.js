@@ -17,6 +17,11 @@ let gameOver = false;
 let windMode = false; //Режим ветра
 let seconds = 59; //Для отсчета таймера
 
+window.addEventListener("resize", function () {
+    width = canvas.width = window.innerWidth;
+    height = canvas.height = window.innerHeight;
+});
+
 //Игровой фон
 let fonImg = new Image();
 fonImg.src = "image/fon.jpg";
