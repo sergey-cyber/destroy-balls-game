@@ -83,6 +83,14 @@ window.addEventListener("mousemove", function(event) {
 	}
 });
 
+window.addEventListener("touchmove", function(event) {
+	needle.y = 20;
+	needle.x = event.offsetX;
+	if(event.offsetX > width-25) {
+		needle.x = width - 25;
+	}
+});
+
 startBtn.onclick = () => {
 	startPage.style.display = 'none';
 	/* fonImg.onload = function() { */	//Запускает функцию game после загрузки фона
